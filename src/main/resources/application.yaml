@@ -1,0 +1,14 @@
+server:
+  port: 8082
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/job
+    username: user
+    password: password
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop #update/ validate / create / none
